@@ -2,7 +2,10 @@
   "scripts": {
     "client": "npm run dev --prefix frontend",
     "server": "npm run dev --prefix backend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+    
   },
   "dependencies": {
     "axios": "^1.13.4",
@@ -12,5 +15,21 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
-  }
+  },
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "A modern, responsive, and robust full-stack Gym Management System built with the MERN (MongoDB, Express, React, Node.js) stack. This application allows gym owners and administrators to efficiently manage their gym members, track fitness goals, assign workouts, and handle membership plans seamlessly.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chmcs2026sujalpawar-ctrl/GYM-MANAGEMENT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chmcs2026sujalpawar-ctrl/GYM-MANAGEMENT/issues"
+  },
+  "homepage": "https://github.com/chmcs2026sujalpawar-ctrl/GYM-MANAGEMENT#readme"
 }
